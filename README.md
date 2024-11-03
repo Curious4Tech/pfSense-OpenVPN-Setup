@@ -21,7 +21,7 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 2. Navigate to **VPN > OpenVPN**.
 3. Click on the **Wizards** tab to start the OpenVPN setup wizard.
 
-   ![image](https://github.com/user-attachments/assets/3ff74265-c96e-4176-9d87-13c9f6eb7d90)
+![image](https://github.com/user-attachments/assets/3ff74265-c96e-4176-9d87-13c9f6eb7d90)
 
 
 ### Step 2: Configure the OpenVPN Server with the Wizard
@@ -37,14 +37,16 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 1. Choose **Create a new Certificate Authority** if you don’t have an existing CA.
 
 
-    ![image](https://github.com/user-attachments/assets/39744777-6cea-4a55-acff-93de4e3f58c9)
+![image](https://github.com/user-attachments/assets/39744777-6cea-4a55-acff-93de4e3f58c9)
    
 
 3. Enter a **Descriptive Name** (e.g., `OpenVPN-CA`).
 4. Fill in the required fields, such as **Country Code**, **State**, **City**, **Organization**, etc.
 5. Click **Add new CA**.
 
+
 ![image](https://github.com/user-attachments/assets/fd9ab6c6-e704-4c9b-ae7c-4925b9739c7f)
+
 
 ### Step 4: Create the Server Certificate
 1. Choose **Create an internal Certificate** for the OpenVPN server.
@@ -59,7 +61,10 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 4. **Interface**: Choose the **WAN** interface.
 5. **Local Port**: Use **1194** or specify another port if necessary.
 
-   ![image](https://github.com/user-attachments/assets/b29c3e22-7d0f-47bd-a5fb-c26332229ce5)
+
+
+![image](https://github.com/user-attachments/assets/b29c3e22-7d0f-47bd-a5fb-c26332229ce5)
+
 
 
 ### Step 6: Configure Cryptographic Settings
@@ -73,7 +78,9 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 7. **Hardware Crypto**: Select **No Hardware Crypto Acceleration** unless you have specific hardware support, such as AES-NI.
 
 
-   ![image](https://github.com/user-attachments/assets/9acfc5d6-2d02-4568-b050-ff73b04082ac)
+
+![image](https://github.com/user-attachments/assets/9acfc5d6-2d02-4568-b050-ff73b04082ac)
+
 
 
 ### Step 7: Configure Tunnel Settings
@@ -84,22 +91,31 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 5. **Concurrent Connections**: Set a limit if required.
 6. **Compression**: Set to **No Preference** or **LZO Compression** if needed.
 
-  ![image](https://github.com/user-attachments/assets/edbd2efb-f72f-4850-91e6-99347b189785)
+
+
+![image](https://github.com/user-attachments/assets/edbd2efb-f72f-4850-91e6-99347b189785)
 
 
 ### Step 8: Configure Client Settings
 1. **DNS Default Domain**: Enter an internal domain if applicable.
 2. **DNS Servers**: Specify DNS servers for the VPN clients if desired.
 3. **Next** to continue the configuration settings.
+
+
    
   ![image](https://github.com/user-attachments/assets/973dce9e-7d55-4f8c-8aa2-5b08c610b7c9)
+
+
 
 4. Check **Firewall rule** and **OpenVPN rule**, and then click on **Next**
 
 
+
    ![image](https://github.com/user-attachments/assets/4d69d1a5-8c00-4203-8338-a3a53ac67b39)
+
    
 5. Click on **Finish** to save the configurataion
+
 
     ![image](https://github.com/user-attachments/assets/dbea298c-dda3-4b06-b6d7-2f5bf198abbc)
 
@@ -107,12 +123,14 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 ### Step 9: Create OpenVPN Users
 1. Go to **System > User Manager** in the pfSense menu.
 
-  ![image](https://github.com/user-attachments/assets/c290d005-7de1-4110-b57b-b263e7df369f)
+
+![image](https://github.com/user-attachments/assets/c290d005-7de1-4110-b57b-b263e7df369f)
+
 
 3. Click **Add** to create a new user.
 
 
-    ![image](https://github.com/user-attachments/assets/4d6f25dc-efbe-4f29-a1f7-1732849c0f30)
+![image](https://github.com/user-attachments/assets/4d6f25dc-efbe-4f29-a1f7-1732849c0f30)
 
 4. Set a **Username** and **Password**.
 
@@ -122,7 +140,9 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 
 6. In the **Certificates** section, click **Add New Certificate** to generate a certificate for the user.
 
-   ![image](https://github.com/user-attachments/assets/1904d4ed-0530-49e7-9179-6e0562b02399)
+
+![image](https://github.com/user-attachments/assets/1904d4ed-0530-49e7-9179-6e0562b02399)
+
 
 8. Save the user configuration.
 
@@ -133,7 +153,10 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 3. Assign the above-listed permissions as needed.
 4. Save the settings.
 
+
+
 ![image](https://github.com/user-attachments/assets/6bad50fa-84ed-4b0e-a885-2fe8fc054c6e)
+
 
 
 ### Step 11: Export the VPN Client Configuration

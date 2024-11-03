@@ -167,7 +167,7 @@ Once the esrver configuration is setup , you can proceed to set up the OpenVPN c
 
 ## Additional Resources
 - [pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/)
-- [OpenVPN Documentation](https://openvpn.net/as-docs/general.html))
+- [OpenVPN Documentation](https://openvpn.net/as-docs/general.html)
 
 ---
 

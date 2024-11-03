@@ -93,8 +93,8 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 
 
 
-![image](https://github.com/user-attachments/assets/edbd2efb-f72f-4850-91e6-99347b189785)
-
+ ![image](https://github.com/user-attachments/assets/edbd2efb-f72f-4850-91e6-99347b189785)
+ 
 
 ### Step 8: Configure Client Settings
 1. **DNS Default Domain**: Enter an internal domain if applicable.
@@ -111,37 +111,37 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 
 
 
-   ![image](https://github.com/user-attachments/assets/4d69d1a5-8c00-4203-8338-a3a53ac67b39)
+ ![image](https://github.com/user-attachments/assets/4d69d1a5-8c00-4203-8338-a3a53ac67b39)
 
    
 5. Click on **Finish** to save the configurataion
 
 
-    ![image](https://github.com/user-attachments/assets/dbea298c-dda3-4b06-b6d7-2f5bf198abbc)
+ ![image](https://github.com/user-attachments/assets/dbea298c-dda3-4b06-b6d7-2f5bf198abbc)
 
 
 ### Step 9: Create OpenVPN Users
 1. Go to **System > User Manager** in the pfSense menu.
 
 
-![image](https://github.com/user-attachments/assets/c290d005-7de1-4110-b57b-b263e7df369f)
+ ![image](https://github.com/user-attachments/assets/c290d005-7de1-4110-b57b-b263e7df369f)
 
 
 3. Click **Add** to create a new user.
 
 
-![image](https://github.com/user-attachments/assets/4d6f25dc-efbe-4f29-a1f7-1732849c0f30)
+ ![image](https://github.com/user-attachments/assets/4d6f25dc-efbe-4f29-a1f7-1732849c0f30)
 
 4. Set a **Username** and **Password**.
 
    
-![image](https://github.com/user-attachments/assets/feb627cc-6f89-431c-93d3-4d1c24592da5)
+ ![image](https://github.com/user-attachments/assets/feb627cc-6f89-431c-93d3-4d1c24592da5)
 
 
 6. In the **Certificates** section, click **Add New Certificate** to generate a certificate for the user.
 
 
-![image](https://github.com/user-attachments/assets/1904d4ed-0530-49e7-9179-6e0562b02399)
+ ![image](https://github.com/user-attachments/assets/1904d4ed-0530-49e7-9179-6e0562b02399)
 
 
 8. Save the user configuration.
@@ -155,20 +155,13 @@ This guide provides a step-by-step setup for configuring OpenVPN on pfSense usin
 
 
 
-![image](https://github.com/user-attachments/assets/6bad50fa-84ed-4b0e-a885-2fe8fc054c6e)
+ ![image](https://github.com/user-attachments/assets/6bad50fa-84ed-4b0e-a885-2fe8fc054c6e)
 
-
-
-### Step 11: Export the VPN Client Configuration
-1. Navigate to **VPN > OpenVPN > Client Export**.
-2. Under **Client Export Package**, locate your VPN configuration.
-3. **Download the installer** or configuration files needed for your device.
-   - If using OpenVPN Connect, download the **.ovpn file** for importing.
 
 ---
 
 ### Next Steps
-Once the configuration files are downloaded, you can proceed to set up the OpenVPN client on your device to test the VPN connection.
+Once the esrver configuration is setup , you can proceed to set up the OpenVPN client VPN connection.
 
 ---
 
